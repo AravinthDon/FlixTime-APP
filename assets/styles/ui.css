@@ -1,0 +1,37 @@
+body {
+    background-color: lavender;
+}
+.center {
+    position: absolute; 
+    top: 30%;
+}
+.search-area {
+    height: 80vh;
+    text-align: center;
+    display: grid; 
+    place-content: center;
+    font-size: 25px;
+}
+
+.search-area h2 {
+    font-size: 45px;
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+footer {
+    height: 10vh;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

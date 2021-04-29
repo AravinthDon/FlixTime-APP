@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>FlixTime - Movies List</title>
+    <link href="/flixtime/assets/styles/ui.css" rel="stylesheet">
+    <script src="/flixtime/assets/scripts/generator.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/flixtime/index.html">FlixTime</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/flixtime/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Movies</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="tvshows.html">TV Shows</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="content-box">
+            <div class="row">
+                <div class="col-lg-12 col-md-10" style="text-align: center;">
+                    <h2>1000 TV Shows Found</h2>
+                </div>
+            </div>
+
+            <!-- Top Pagination bar-->
+            <nav aria-label="Top Pagination bar">
+                <ul class="pagination justify-content-center">
+                    <!-- active for active links .disabled for links that appear unclickable -->
+                    <li class="page-item active">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End of Top Pagination bar-->
+
+            <!-- Movie List-->
+            <div class="container" id="content-list">
+            </div>
+            <!-- End of movie list-->
+
+            <!-- Bottom Pagination bar-->
+            <nav aria-label="Bottom Pagination bar">
+                <ul class="pagination justify-content-center">
+                    <!-- active for active links .disabled for links that appear unclickable -->
+                    <li class="page-item active">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End of Bottom Pagination bar -->
+        </section>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <!-- Footer links and copyright information -->
+            <div class="row footer-links">
+                <div class="col-lg-6 col-md-10">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="#">About</a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-10" style="text-align: right; align-items: center;">
+                    &copy; Copyright 2021 Don Enterprises
+                </div>
+            </div>
+    </footer>
+
+    <!-- Scripts for bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        var content_list = document.getElementById('content-list');
+        generateCards('TV', content_list);
+            //generateCard(1, 'Movie', content_list);
+    </script>
+</body>
+
+</html>
